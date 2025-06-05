@@ -1,0 +1,18 @@
+footer {
+  border-top: 1px solid #f9f7fe;
+  padding-top: 15px;
+  color: rgba(39, 33, 66, 0.4);
+  text-align: center;
+}
+
+.cherry-logo {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.cherry {
+  width: 25px;
+  height: auto;
+  display: block;
+}
