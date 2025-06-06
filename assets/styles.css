@@ -1,3 +1,7 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 footer {
   border-top: 1px solid #f9f7fe;
   padding-top: 15px;
@@ -15,4 +19,13 @@ footer {
   width: 25px;
   height: auto;
   display: block;
+}
+
+.app {
+  background: lightgrey;
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0 30px 50px rgba(39, 33, 66, 0.4);
+  border-radius: 10px;
 }
