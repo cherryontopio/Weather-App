@@ -33,7 +33,7 @@
         <form class="search-form" id="search-form">
           <input
             type="search"
-            placeholder="Change city.."
+            placeholder="Change city"
             required
             id="search-form-input"
             class="search-form-input"
@@ -42,23 +42,32 @@
         </form>
       </header>
       <main>
-        <div>
-          <div class="temperature-section">
-            <div class="temperature-value">12°C</div>
-            <div class="temperature-icon">☀️</div>
+        <div class="temperature-section">
+          <div class="temperature-display">
+            <div class="temperature-value" id="temperature">23</div>
+            <div class="temperature-unit">°C</div>
           </div>
+          <div class="temperature-icon"><img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-night.png" alt=""></div>
         </div>
 
         <div class="date-weather">
           <div class="left-column">
-            <div class="city" id="city">Paris</div>
-            <div class="date-time">Tuesday 14:49</div>
+            <div class="city" id="city"></div>
+            <div class="date-time" id="time"></div>
           </div>
 
           <div class="right-column">
-            <div class="humidity"><i class="fas fa-tint"></i> 66%</div>
-            <div class="wind-speed"><i class="fas fa-wind"></i> 3.13km/h</div>
-            <div class="weather-description">Forecast: Sunny</div>
+            <div class="humidity">
+              <i class="fas fa-tint"> </i>
+              <span id="humidity"></span>
+            </div>
+            <div class="wind-speed">
+              <i class="fas fa-wind"></i> 
+              <span id="wind"></span>
+            </div>
+            <div class="weather-description">
+            <i class="fas fa-cloud-sun-rain"></i> 
+            <span id="description"></span>
           </div>
         </div>
         <!--

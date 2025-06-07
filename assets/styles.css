@@ -52,6 +52,12 @@ main {
   align-items: center;
 }
 
+.temperature-display {
+  display: flex;
+  align-items: flex-start; /* aligns °C to top of number */
+  gap: 4px; /* space between number and unit */
+}
+
 .temperature-value {
   font-size: 120px;
   font-weight: 500;
@@ -68,6 +74,12 @@ main {
   line-height: 1;
 }
 
+.temperature-unit {
+  font-size: 50px;
+  padding-top: 25px;
+  font-family: "Poppins", sans-serif;
+}
+
 .date-weather {
   padding-bottom: 50px;
   display: flex;
@@ -81,7 +93,7 @@ main {
 }
 
 .date-weather .left-column .city {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .date-weather .right-column {
@@ -96,7 +108,11 @@ main {
 }
 
 .wind-speed i {
-  color: rgb(80, 80, 80);
+  color: blue;
+}
+
+.weather-description i {
+  color: blue;
 }
 
 .days {
