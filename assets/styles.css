@@ -1,11 +1,17 @@
 body {
   font-family: "Poppins", sans-serif;
+  background-image: url(../assets/images/weather6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
 }
 
 /* APP BODY */
 
 .app {
-  background: lightgrey;
+  background: rgba(255, 255, 255, 0.622);
   max-width: 650px;
   margin: 100px auto;
   padding: 30px;
@@ -25,11 +31,11 @@ header {
   border: none;
   width: 75%;
   border-radius: 6px;
-  background-color: white;
+
   padding: 15px;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
-  box-shadow: 0 15px 30px rgba(120, 120, 125, 0.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .search-form-button {
@@ -143,7 +149,7 @@ header {
 /* FOOTER */
 
 footer {
-  color: rgba(39, 33, 66, 0.4);
+  color: rgba(39, 39, 39, 0.864);
   text-align: center;
   border-top: 1px solid white;
   padding-top: 20px;
@@ -152,11 +158,15 @@ footer {
 .cherry-logo {
   display: inline-flex;
   align-items: center;
-  margin: 0 5px;
+  margin: 0 1px;
 }
 
 .cherry {
   width: 25px;
   height: auto;
   display: block;
+}
+
+footer a {
+  margin: 0 5px;
 }
