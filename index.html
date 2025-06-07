@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/webp" href="/assets/images/favicon.webp" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -24,26 +24,53 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="assets/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city.." required />
-          <input type="submit" value="Search" />
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Change city.."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
         <div>
-          <h1>Paris</h1>
-          <p>
-            Tuesday 14:49, scattered clouds
-            <br />
-            Humidity: 66%, Wind: 3.13km/h
-          </p>
+          <div class="temperature-section">
+            <div class="temperature-value">12°C</div>
+            <div class="temperature-icon">☀️</div>
+          </div>
         </div>
-        <div>🌤️ 12°C</div>
+
+        <div class="date-weather">
+          <div class="left-column">
+            <div class="city" id="city">Paris</div>
+            <div class="date-time">Tuesday 14:49</div>
+          </div>
+
+          <div class="right-column">
+            <div class="humidity"><i class="fas fa-tint"></i> 66%</div>
+            <div class="wind-speed"><i class="fas fa-wind"></i> 3.13km/h</div>
+            <div class="weather-description">Forecast: Sunny</div>
+          </div>
+        </div>
+        <!--
+        <div class="days">
+          <div>Monday</div>
+          <div>Monday</div>
+          <div>Monday</div>
+          <div>Monday</div>
+          <div>Monday</div>
+          <div>Monday</div>
+          <div>Monday</div>
+        </div>-->
       </main>
       <footer>
         This project was coded by
@@ -77,5 +104,6 @@
         >
       </footer>
     </div>
+    <script src="assets/index.js"></script>
   </body>
 </html>

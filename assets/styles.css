@@ -2,11 +2,123 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.app {
+  background: lightgrey;
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(19, 19, 20, 0.5);
+  border-radius: 10px;
+}
+
+header {
+  border-bottom: 1px solid white;
+  padding-bottom: 30px;
+}
+
+.search-form-input {
+  padding: 20px;
+  border: none;
+  width: 75%;
+  border-radius: 6px;
+  background-color: white;
+  padding: 15px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 15px 30px rgba(120, 120, 125, 0.5);
+}
+
+.search-form-button {
+  background-color: darkred;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  width: 24%;
+  padding: 15px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  box-shadow: 0 15px 30px rgba(120, 120, 125, 0.5);
+}
+
+main {
+  padding: 20px 0;
+}
+
+.temperature-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.temperature-value {
+  font-size: 120px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.temperature-icon {
+  font-size: 120px;
+  width: 100px;
+  text-align: right;
+  padding: 20px;
+  margin: 20px;
+  display: block;
+  line-height: 1;
+}
+
+.date-weather {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-weather .left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.date-weather .left-column .city {
+  font-size: 50px;
+}
+
+.date-weather .right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.humidity i {
+  color: blue;
+}
+
+.wind-speed i {
+  color: rgb(80, 80, 80);
+}
+
+.days {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.temperature-conditions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 footer {
   border-top: 1px solid #f9f7fe;
-  padding-top: 15px;
+
   color: rgba(39, 33, 66, 0.4);
   text-align: center;
+  border-top: 1px solid white;
+  padding-top: 20px;
 }
 
 .cherry-logo {
@@ -19,13 +131,4 @@ footer {
   width: 25px;
   height: auto;
   display: block;
-}
-
-.app {
-  background: lightgrey;
-  max-width: 650px;
-  margin: 50px auto;
-  padding: 30px;
-  box-shadow: 0 30px 50px rgba(39, 33, 66, 0.4);
-  border-radius: 10px;
 }
