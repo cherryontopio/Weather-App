@@ -2,14 +2,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* APP BODY */
+
 .app {
   background: lightgrey;
   max-width: 650px;
-  margin: 50px auto;
+  margin: 100px auto;
   padding: 30px;
   box-shadow: 0 15px 30px rgba(19, 19, 20, 0.5);
   border-radius: 10px;
 }
+
+/* HEADER WITH SEARCH FORM */
 
 header {
   border-bottom: 1px solid white;
@@ -42,48 +46,54 @@ header {
   box-shadow: 0 15px 30px rgba(120, 120, 125, 0.5);
 }
 
-main {
-  padding: 20px 0;
-}
+/* TEMPERATURE AND ICON */
 
 .temperature-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .temperature-display {
   display: flex;
-  align-items: flex-start; /* aligns °C to top of number */
-  gap: 4px; /* space between number and unit */
+  align-items: flex-start;
+  gap: 4px;
 }
 
 .temperature-value {
-  font-size: 120px;
+  font-size: 100px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
 
 .temperature-icon {
-  font-size: 120px;
-  width: 100px;
-  text-align: right;
-  padding: 20px;
-  margin: 20px;
   display: block;
-  line-height: 1;
+  width: 150px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  border: none;
+  object-fit: contain;
+  margin-right: -30px;
+  transform: scale(1.1);
 }
 
 .temperature-unit {
   font-size: 50px;
-  padding-top: 25px;
+  padding-top: 20px;
   font-family: "Poppins", sans-serif;
 }
 
+/* CITY, TIME, AND DATA SECTION */
+
 .date-weather {
-  padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 .date-weather .left-column {
@@ -108,12 +118,14 @@ main {
 }
 
 .wind-speed i {
-  color: blue;
+  color: darkgoldenrod;
 }
 
 .weather-description i {
-  color: blue;
+  color: purple;
 }
+
+/* DAYS CURRENTLY HIDDEN */
 
 .days {
   margin-top: 50px;
@@ -128,9 +140,9 @@ main {
   align-items: center;
 }
 
-footer {
-  border-top: 1px solid #f9f7fe;
+/* FOOTER */
 
+footer {
   color: rgba(39, 33, 66, 0.4);
   text-align: center;
   border-top: 1px solid white;

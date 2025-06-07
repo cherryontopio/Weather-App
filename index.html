@@ -38,16 +38,16 @@
             id="search-form-input"
             class="search-form-input"
           />
-          <input type="submit" value="Search" class="search-form-button" />
+          <button type="submit" class="search-form-button">Search</button>
         </form>
       </header>
       <main>
         <div class="temperature-section">
           <div class="temperature-display">
-            <div class="temperature-value" id="temperature">23</div>
+            <div class="temperature-value" id="temperature"></div>
             <div class="temperature-unit">°C</div>
           </div>
-          <div class="temperature-icon"><img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-night.png" alt=""></div>
+          <div id="icon"></div>
         </div>
 
         <div class="date-weather">
@@ -62,12 +62,13 @@
               <span id="humidity"></span>
             </div>
             <div class="wind-speed">
-              <i class="fas fa-wind"></i> 
+              <i class="fas fa-wind"></i>
               <span id="wind"></span>
             </div>
             <div class="weather-description">
-            <i class="fas fa-cloud-sun-rain"></i> 
-            <span id="description"></span>
+              <i class="fas fa-cloud-sun-rain"></i>
+              <span id="description"></span>
+            </div>
           </div>
         </div>
         <!--
