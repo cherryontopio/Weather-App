@@ -11,7 +11,7 @@ body {
 /* APP BODY */
 
 .app {
-  background: rgba(255, 255, 255, 0.622);
+  background: rgba(255, 255, 255, 0.7);
   max-width: 650px;
   margin: 100px auto;
   padding: 30px;
@@ -22,7 +22,7 @@ body {
 /* HEADER WITH SEARCH FORM */
 
 header {
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
   padding-bottom: 30px;
 }
 
@@ -31,11 +31,12 @@ header {
   border: none;
   width: 75%;
   border-radius: 6px;
-
   padding: 15px;
   font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.047);
+  color: black;
   font-family: "Poppins", sans-serif;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 40px rgba(120, 120, 125, 0.5);
 }
 
 .search-form-button {
@@ -50,6 +51,10 @@ header {
   font-weight: normal;
   text-transform: uppercase;
   box-shadow: 0 15px 30px rgba(120, 120, 125, 0.5);
+}
+
+main {
+  padding: 20px 0;
 }
 
 /* TEMPERATURE AND ICON */
@@ -149,9 +154,9 @@ header {
 /* FOOTER */
 
 footer {
-  color: rgba(39, 39, 39, 0.864);
+  color: black;
   text-align: center;
-  border-top: 1px solid white;
+  border-top: 2px solid white;
   padding-top: 20px;
 }
 
