@@ -76,7 +76,7 @@ main {
 }
 
 .temperature-value {
-  font-size: 90px;
+  font-size: 100px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
@@ -89,7 +89,7 @@ main {
   margin: 0;
   border: none;
   object-fit: contain;
-  margin-right: -30px;
+  margin-right: -25px;
   transform: scale(1.1);
 }
 
@@ -140,6 +140,7 @@ main {
 
 .forecast {
   margin-top: 50px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -160,15 +161,21 @@ main {
 }
 
 .forecast-temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
   font-size: 16px;
   line-height: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+
+.forecast-temp-day {
+  font-weight: bold;
 }
 
 .forecast-temp-night {
   color: rgb(120, 120, 120);
+  font-weight: normal;
 }
 
 .temperature-conditions {
